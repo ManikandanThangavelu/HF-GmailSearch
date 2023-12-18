@@ -1,0 +1,28 @@
+[
+    {
+        "id": "Rule1",
+        "root_predicate": "ALL",
+        "rules": [
+            {
+                "field": "sender",
+                "predicate": "equals",
+                "value": "<SENDER_EMAIL>"
+            },
+            {
+                "field": "subject",
+                "predicate": "contains",
+                "value": "<TEXT>"
+            }
+        ],
+        "actions": [
+            {
+                "action": "Mark as",
+                "field": "READ"
+            },
+            {
+                "action": "Move Message",
+                "field": "STARRED"
+            }
+        ]
+    }
+]
